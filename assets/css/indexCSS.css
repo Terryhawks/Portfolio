@@ -17,7 +17,6 @@ body {
   --secondaryTextColour: #37718E;
   --contrast: #C33C54;
   margin: 0;
-  top: 0;
 }
 
 embed{
@@ -57,6 +56,7 @@ embed{
   font-size: 4rem;
   left: calc(25vw - 0.5rem);
   width: max-content;
+  margin: 1.25rem 0;
 }
 
 .introduction {
