@@ -7,4 +7,10 @@ embed{
   height: clamp(65px, 7.5dvh, 100px);
   box-shadow: 0 0.25dvh clamp(5px, 0.1rem, 25px) 0.01rem #000000;
   position: fixed;
+  z-index: 999;
+}
+
+.spacer {
+  height: clamp(65px, 7.5dvh, 100px);
+  background-color: var(--mainBackgroundColour, #00F00F);
 }
