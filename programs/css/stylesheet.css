@@ -1,4 +1,21 @@
-body{
+:root{
+  font-family: "Saira", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  --missingColour: #FF0FF0;
+  --missingBackground: #00F00F;
+  font-size: 16px;
+}
+
+body {
+  --mainBackgroundColour: #254E70;
+  --mainTextColour: #8EE3EF;
+  --secondaryBackgroundColour: #AEF3E7;
+  --secondaryTextColour: #37718E;
+  --contrast: #C33C54;
   margin: 0;
 }
 
@@ -7,4 +24,9 @@ embed{
   height: clamp(65px, 7.5dvh, 100px);
   box-shadow: 0 0.25dvh clamp(5px, 0.1rem, 25px) 0.01rem #000000;
   position: fixed;
+}
+
+.spacer {
+  height: clamp(65px, 7.5dvh, 100px);
+  background-color: var(--mainBackgroundColour, #00F00F);
 }
