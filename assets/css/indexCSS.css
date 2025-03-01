@@ -126,6 +126,62 @@ embed{
   font-size: 6rem;
 }
 
+.educations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 2%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "jhs shs uni";
+}
+
+.jhs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "juniorHighSchoolName"
+    "juniorHighSchoolActivities";
+  grid-area: jhs;
+}
+
+.juniorHighSchoolName { grid-area: juniorHighSchoolName; }
+
+.juniorHighSchoolActivities { grid-area: juniorHighSchoolActivities; }
+
+.shs {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "seniorHighSchoolName"
+    "seniorHighSchoolActivities";
+  grid-area: shs;
+}
+
+.seniorHighSchoolName { grid-area: seniorHighSchoolName; }
+
+.seniorHighSchoolActivities { grid-area: seniorHighSchoolActivities; }
+
+.uni {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "universityName"
+    "universityActivities";
+  grid-area: uni;
+}
+
+.universityName { grid-area: universityName; }
+
+.universityActivities { grid-area: universityActivities; }
+
 .educationBackground {
   color: var(--mainTextColour);
   position: relative;
