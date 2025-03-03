@@ -128,24 +128,25 @@ embed{
 
 .educations {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   gap: 0px 2%;
   grid-auto-flow: row;
   grid-template-areas:
     "jhs shs uni";
+  width: 80%;
+  height: 50vh;
+  justify-self: center;
 }
 
 .jhs {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "juniorHighSchoolName"
     "juniorHighSchoolActivities";
   grid-area: jhs;
+  background-image: url("../images/MB2-HS.jpg");
+  background-size: cover;
 }
 
 .juniorHighSchoolName { grid-area: juniorHighSchoolName; }
@@ -153,14 +154,14 @@ embed{
 .juniorHighSchoolActivities { grid-area: juniorHighSchoolActivities; }
 
 .shs {  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "seniorHighSchoolName"
     "seniorHighSchoolActivities";
   grid-area: shs;
+  background-image: url("../images/MB2-HS.jpg");
+  background-size: cover;
 }
 
 .seniorHighSchoolName { grid-area: seniorHighSchoolName; }
@@ -168,29 +169,19 @@ embed{
 .seniorHighSchoolActivities { grid-area: seniorHighSchoolActivities; }
 
 .uni {  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "universityName"
     "universityActivities";
   grid-area: uni;
+  background-image: url("../images/Binus\ Alam\ Sutera.jpeg");
+  background-size: cover;
 }
 
 .universityName { grid-area: universityName; }
 
 .universityActivities { grid-area: universityActivities; }
-
-.educationBackground {
-  color: var(--mainTextColour);
-  position: relative;
-  width: 87.5%;
-  left: 6.25%;
-  text-indent: 6.25%;
-  font-size: 3rem;
-  word-wrap: break-word;
-}
 
 .careerPath {  
   display: grid;
